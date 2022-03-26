@@ -1,0 +1,168 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+body{
+    
+ 
+    font-family: arial;
+    background: url("../css/logo.jpg");
+    background-size: 100%;
+ }
+ul{
+    list-style: none;
+    position: fixed;   
+}
+a{
+    text-decoration: none;
+    color:rgba(230, 23, 109, 0.774);
+    display: block;
+    padding: 0px 20px;
+}
+ul li a:hover{
+    background-color: rgba(255, 255, 255, 0.986);
+}
+nav{
+  
+    background-color: rgb(19, 19, 18);
+    height: 50px;
+
+}
+ul#ul-principal{
+
+    position: fixed;
+    background-color: rgb(20, 22, 22);
+    width: 90%;
+    margin: auto;
+}
+.li-p{
+    line-height: 50px;
+    float: left;
+}
+ul li ul li{
+    background-color: black;
+    position: fixed;
+}
+.ul-Categoria, .ul-serv, .ul-sobre{
+    display: none;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.swiper{
+    width: 80%;
+    height: fit-content;
+}
+.swiper-slide img{
+    width: 99%;
+}
+.swiper .swiper-button-prev,.swiper .swiper-button-next{
+    color: rgb(17, 228, 62);
+}
+.swiper .swiper-pagination-bullet-active{
+    background: rgb(252, 5, 5);
+}
+.Curiosidade{ 
+width: 400px;
+background: #e3ebe3;
+height: 800px;
+border-radius: 20px 20px 20px 20px;
+
+ }
+ .cards-container{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+ }
+ .cards-img{
+     width: 100%;
+ }
+ h1{
+     height: 10%;
+     text-align: center;
+ }
+ .video{
+     background: url(../video/CONHEÇA\ ARACAJU\ A\ CAPITAL\ NORDESTINA\ DA\ QUALIDADE\ DE\ VIDA!.mp4);
+    position: absolute;
+    width: 1077px;
+    height: 534px;
+    left: 123px;
+    top: 1675px;
+    
+    background: #C4C4C4;
+    border-radius: 31px;
+ }
+ 
+section{
+	margin:50px auto;
+	width:1025px;
+	height:150px;
+}
+
+.rede{
+	width: 150px;
+	height: 150px;
+	float:left;
+	margin-left: 20px;
+	transition: all .4s ease-out;
+	border-radius: 50%;
+}
+
+.rede:hover{
+	cursor: pointer;
+	box-shadow: 4px 30px 16px 0px rgba(50, 50, 50, 0.45);
+	transform: translateY(-20px);
+}
+
+.rede#facebook{
+	background-color: #2372a3;
+    
+ }
+.rede#twitter{
+	background-color: #0084b4;
+}
+
+.rede#insta{
+	background-color: #3f729b;
+}
+
+.rede#snap{
+	background-color: #ffcc00;
+}
+
+.rede#plus{
+	background-color:  #dd4b39;
+}
+
+.rede#youtube{
+	background-color:  #b00;
+}
+
+@media  (min-width: 320)  { 
+    .cards-container{
+        width: 45vw;
+    }
+    
+}
+@media (min-width: 768) {
+    .cards-container .video .swiper{
+        width: 25vw;
+    }
+
+}  
+@media  (min-width:1024 ) {
+    .cards-container .video .swiper {
+        width: 15vw;
+
+
+    }
+
+
+}
